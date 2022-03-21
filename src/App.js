@@ -6,23 +6,22 @@ import FavoritesPage from "./pages/Favorites";
 import ErrorPage from "./pages/ErrorPage";
 import Profile from "./pages/Profile";
 import Layout from "./components/Layout/Layout";
-import MainNavigation from "./components/Layout/MainNavigation";
+// import MainNavigation from "./components/Layout/MainNavigation";
 
 function App() {
   //localhost:3000/products - domena
   //my-page.com/
   return (
     <div>
+      {/* <MainNavigation /> */}
       <Layout>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<AllMeetupsPage />} />
-            <Route path="/new-meetup" element={<NewMeetupPage />} />
-            <Route path="/favorites" element={<FavoritesPage />} />
-            <Route path="/profile/:username" element={<Profile />} />
-            <Route path="*" element={<ErrorPage />} />
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<AllMeetupsPage />} />
+          <Route path="/new-meetup" element={<NewMeetupPage />} />
+          <Route path="/favorites" element={<FavoritesPage />} />
+          <Route path="/profile/:username" element={<Profile />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
       </Layout>
     </div>
   );
