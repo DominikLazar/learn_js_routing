@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import React from "react";
 import AllMeetupsPage from "./pages/AllMeetups";
 import NewMeetupPage from "./pages/NewMeetup";
@@ -9,11 +9,8 @@ import Layout from "./components/Layout/Layout";
 // import MainNavigation from "./components/Layout/MainNavigation";
 
 function App() {
-  //localhost:3000/products - domena
-  //my-page.com/
   return (
     <div>
-      {/* <MainNavigation /> */}
       <Layout>
         <Routes>
           <Route path="/" element={<AllMeetupsPage />} />
