@@ -13,7 +13,7 @@ function App() {
     <div>
       <Layout>
         <Routes>
-          <Route path="/" element={<AllMeetupsPage />} />
+          <Route path="/learn_js_routing" element={<AllMeetupsPage />} />
           <Route path="/new-meetup" element={<NewMeetupPage />} />
           <Route path="/favorites" element={<FavoritesPage />} />
           <Route path="/profile/:username" element={<Profile />} />
